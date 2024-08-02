@@ -30,8 +30,8 @@
 ```bash
 1. npm install
 ```
+--- 
 
 ## Parameters
-|localStorage| in this project to store local storage is being used|
----
-|Basic| To create such project, need to be knows of usContext , use of components |
+|localStorage | Basic|
+| in this project to store local storage is being used| To create such project, need to be knows of usContext , use of components |
