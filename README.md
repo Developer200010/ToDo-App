@@ -3,7 +3,7 @@
 ## Description
  It is used to help a user to store all his/her daily task.
 
-## Tool use : Next.js and TypeScript
+## Tool use : ### Next.js and TypeScript
 
  <!-- ## Table of Contents
 - [Installation](#installation)
@@ -13,18 +13,18 @@
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments) -->
 
-## Roadmap
+<!-- ## Roadmap
 - [ ] Feature 1
 - [ ] Feature 2
-- [ ] Feature 3
+- [ ] Feature 3 -->
 
 ## Installation
-1.
+1. npm clone [path of git]
 
 ### Prerequisites
-- Node.js
-- npm
+- Next.js
+- TypeScript
+
 
 ```bash
-
-```bash
+1. npm install
