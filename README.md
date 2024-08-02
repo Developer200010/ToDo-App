@@ -3,7 +3,8 @@
 ## Description
  It is used to help a user to store all his/her daily task.
 
-## Tool use : ### Next.js and TypeScript
+## Tool use : 
+### Next.js and TypeScript
 
  <!-- ## Table of Contents
 - [Installation](#installation)
