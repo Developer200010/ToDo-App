@@ -34,4 +34,5 @@
 
 ## Parameters
 |localStorage | Basic|
+| ------ | ----------- |
 | in this project to store local storage is being used| To create such project, need to be knows of usContext , use of components |
