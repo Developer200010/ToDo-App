@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AddToDo from './components/add-to'
 const page = () => {
   return (
     <main>

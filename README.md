@@ -3,14 +3,15 @@
 ## Description
  It is used to help a user to store all his/her daily task.
 
- ## Table of Contents
+## Tool use : Next.js and TypeScript
+
+ <!-- ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
-
+- [Acknowledgments](#acknowledgments) -->
 
 ## Roadmap
 - [ ] Feature 1
@@ -18,6 +19,8 @@
 - [ ] Feature 3
 
 ## Installation
+1.
+
 ### Prerequisites
 - Node.js
 - npm
