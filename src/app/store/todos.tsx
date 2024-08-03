@@ -1,4 +1,5 @@
 "use client"
+import { Task } from "@mui/icons-material";
 import { createContext, ReactNode, useContext, useState } from "react";
 
 export type Todo = {
@@ -11,12 +12,15 @@ export type Todo = {
 export type TodosContext = {
     todos:Todo[];
     handleAddToDo : (task:string) => void;
+    toggleTodoCompleted : (id:string) => void;
+    handleTodoDelete : (id:string) => void;
 }
 
 export const todosContext= createContext<TodosContext | null>(null);
 
 export const TodosProvider = ({children}:{children:ReactNode}) =>{
     const[todos, setTodos] = useState<Todo[]>([]);
+
     const handleAddToDo = (task:string) =>{
         setTodos((prev)=>{
             const newTodos: Todo[] = [{
@@ -28,11 +32,30 @@ export const TodosProvider = ({children}:{children:ReactNode}) =>{
             ...prev
         ]
         return newTodos;
-    })
-       
+    }) 
     }
+
+    const toggleTodoCompleted = (id:string) =>{
+        setTodos((prev)=>{
+            const newTodos = prev.map((task)=>{
+                if(task.id === id){
+                    return {...task, completed:!task.completed}
+                }
+                return task;
+            })
+            return newTodos;
+        })
+    }
+
+    const handleTodoDelete = (id:string) =>{
+        setTodos((prev)=>{
+            const newTodos = prev.filter((task)=> task.id !== id);
+            return newTodos;
+        })
+    }
+
     return (
-        <todosContext.Provider value={{todos, handleAddToDo}}>
+        <todosContext.Provider value={{todos, handleAddToDo, toggleTodoCompleted, handleTodoDelete}}>
             {children}
         </todosContext.Provider>
     )
